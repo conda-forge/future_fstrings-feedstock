@@ -1,6 +1,6 @@
 {% set name = "future_fstrings" %}
-{% set version = "0.4.4" %}
-{% set hash = "4b715557724bf9c232fcd1d2555ad8f7b79ced7a70dfb2bdf959a81fff5a98e6" %}
+{% set version = "0.4.5" %}
+{% set hash = "891c5d5f073b3e3ff686bebde0a4c45c479065f45c8cbd6de19323d5a50738a8" %}
 
 package:
   name: {{ name }}

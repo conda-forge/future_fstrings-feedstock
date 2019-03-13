@@ -1,6 +1,6 @@
 {% set name = "future_fstrings" %}
-{% set version = "0.4.4" %}
-{% set hash = "4b715557724bf9c232fcd1d2555ad8f7b79ced7a70dfb2bdf959a81fff5a98e6" %}
+{% set version = "1.0.0" %}
+{% set hash = "28a926ad769e1ff7f887bc4135921c42f4da570eab6d5e34cb366663e3182adf" %}
 
 package:
   name: {{ name }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ hash }}
 
 build:
-  number: 1000
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:

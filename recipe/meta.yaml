@@ -1,6 +1,6 @@
 {% set name = "future_fstrings" %}
-{% set version = "1.0.0" %}
-{% set hash = "28a926ad769e1ff7f887bc4135921c42f4da570eab6d5e34cb366663e3182adf" %}
+{% set version = "1.2.0" %}
+{% set hash = "6cf41cbe97c398ab5a81168ce0dbb8ad95862d3caf23c21e4430627b90844089" %}
 
 package:
   name: {{ name }}
@@ -12,7 +12,7 @@ source:
 
 build:
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -31,8 +31,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary:
-    Adds fstrings for python<3.6
+  summary: Adds fstrings for python<3.6
 
   description: |
     A backport of fstrings to python<3.6.
